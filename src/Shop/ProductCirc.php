@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Shop;
+namespace App\Shop; // bien respecter les antislash pou les namespaces
 
 final class ProductCirc extends AbstractProduct
 {
