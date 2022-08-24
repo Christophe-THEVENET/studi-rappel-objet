@@ -1,5 +1,6 @@
 <?php
 
+
 require_once "vendor/autoload.php";
 
 use App\IDisplayable;
@@ -10,13 +11,16 @@ use App\Shop\ProductRect;
 
 $productRect = new ProductRect("Téléviseur", 400, 200, 80);
 
+
 echo '<pre>';
 print_r($productRect);
 echo '</pre>';
-echo '<br>';
 
 $productCirc = new ProductCirc("Ballon", 25, "chance tired plus border individual carried foreign future careful managed arm know three disease missing basic led evidence science industry origin former car blanket", 40);
-var_dump($productCirc);
+
+echo '<pre>';
+print_r($productCirc);
+echo '</pre>';
 echo '<br>';
 
 var_dump($productCirc->getSurface());

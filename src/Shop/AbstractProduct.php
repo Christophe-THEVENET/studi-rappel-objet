@@ -11,6 +11,7 @@ abstract class AbstractProduct implements IDisplayable
   protected float $price;
   protected string $description;
 
+
   public function __construct(
     string $name,
     float $price,
@@ -21,12 +22,15 @@ abstract class AbstractProduct implements IDisplayable
     $this->description = $description;
   }
 
+
   abstract public function getSurface(): float;
+
 
   public function display(): void
   {
-    echo $this->getName() . " - " . $this->getSurface() . "<br />";
+    echo $this->getName() . " - surface de: " . $this->getSurface() . "<br />";
   }
+
 
   public function getName(): string
   {

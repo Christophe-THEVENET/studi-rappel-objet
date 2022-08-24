@@ -2,9 +2,11 @@
 
 namespace App\Shop; // bien respecter les antislash pou les namespaces
 
+
 final class ProductCirc extends AbstractProduct
 {
   private int $diameter;
+
 
   public function __construct(
     string $name,
@@ -16,10 +18,12 @@ final class ProductCirc extends AbstractProduct
     $this->diameter = $diameter;
   }
 
+
   public function getSurface(): float
   {
     return M_PI * (($this->diameter / 2) ** 2);
   }
+
 
   public function getDiameter(): int
   {
