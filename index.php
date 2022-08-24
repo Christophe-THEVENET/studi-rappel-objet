@@ -9,8 +9,8 @@ use App\Shop\AbstractProduct;
 use App\Shop\ProductCirc;
 use App\Shop\ProductRect;
 
-$productRect = new ProductRect("Téléviseur", 400, 200, 80);
 
+$productRect = new ProductRect("Téléviseur", 400, 200, 80);
 
 echo '<pre>';
 print_r($productRect);

@@ -4,7 +4,9 @@ namespace App\Shop;
 
 use App\IDisplayable;
 
+
 abstract class AbstractProduct implements IDisplayable
+// la classe abstraite ne peux pas être instanciée et peux avoir des méthodes abstraites
 {
   protected int $id;
   protected string $name;
@@ -23,7 +25,7 @@ abstract class AbstractProduct implements IDisplayable
   }
 
 
-  abstract public function getSurface(): float;
+  abstract public function getSurface(): float; // methode abstraite juste la signature ===> toutes les classes qui héritent doivent implémenter une méthode getSurface()
 
 
   public function display(): void
