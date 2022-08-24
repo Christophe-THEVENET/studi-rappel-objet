@@ -9,13 +9,21 @@ use App\Shop\ProductCirc;
 use App\Shop\ProductRect;
 
 $productRect = new ProductRect("Téléviseur", 400, 200, 80);
-var_dump($productRect);
+
+echo '<pre>';
+print_r($productRect);
+echo '</pre>';
+echo '<br>';
 
 $productCirc = new ProductCirc("Ballon", 25, "chance tired plus border individual carried foreign future careful managed arm know three disease missing basic led evidence science industry origin former car blanket", 40);
 var_dump($productCirc);
+echo '<br>';
 
 var_dump($productCirc->getSurface());
+echo '<br>';
 var_dump($productRect->getSurface());
+echo '<br>';
+
 
 /**
  * Undocumented function
