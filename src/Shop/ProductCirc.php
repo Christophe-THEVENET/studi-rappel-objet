@@ -21,7 +21,7 @@ final class ProductCirc extends AbstractProduct
 
   public function getSurface(): float
   {
-    return M_PI * (($this->diameter / 2) ** 2);
+    return M_PI * (($this->diameter / 2) ** 2); // M_PI se trouve ds la Standard Librairie PHP
   }
 
 

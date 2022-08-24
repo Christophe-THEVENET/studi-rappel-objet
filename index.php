@@ -28,6 +28,12 @@ echo '<br>';
 var_dump($productRect->getSurface());
 echo '<br>';
 
+echo '----------------------------------------------';
+echo '<br>';
+
+
+
+/* --------------------- POLYMORPHYSME ---------------------- */
 
 /**
  * Undocumented function
@@ -49,6 +55,12 @@ function displayProduct(AbstractProduct $product)
 
 listProducts([$productRect, $productCirc]);
 
+
+echo '----------------------------------------------';
+echo '<br>';
+
+
+/* --------------------- INTERFACES ---------------------- */
 
 function display(IDisplayable $item)
 {
